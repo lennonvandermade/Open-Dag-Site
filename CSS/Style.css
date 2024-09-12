@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(255, 255, 255) 
+}
+
+.wrapper{
+    width: 968px;
+    margin: 0 auto;
+}
+
+header{
+    padding-bottom: 18px;
+}
+
+header, footer{
+    background-color: rgb(3, 53, 124);
+}
+
+footer p{
+    font-family: "Lucida Console", "Copperplate", monospace;
+    font-size: 30px;
+    padding: 25px;
+    color: rgb(42, 221, 93);
+}
+
+h1{
+    color: rgb(42, 221, 93);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2{
+    color: rgb(42, 221, 93);
+    font-family: "Lucida Console", "Copperplate", monospace;
+    background-color: rgb(3, 53, 124);
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+h5{
+    color: rgb(42, 221, 93);
+    font-family: "Lucida Console", "Copperplate", monospace;
+}
+
+nav a{
+    color: rgb(42, 221, 93);
+    font-family: "Lucida Console", "Copperplate", monospace;
+    font-size: 40px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+main H2{
+    color: rgb(0, 0, 0);
+}
+
+p{
+    color:rgb(0, 0, 0);
+}
+
+.over{
+    background-color: rgb(3, 53, 124);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.school{
+    background-image: url('../img/school.jpg');
+    display: flex;
+    justify-content: first baseline;
+}
+
+.overs{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border: 4px solid rgb(42, 221, 93);
+    border-radius: 10px;
+}
+
+script{
+    align-items: center;
+}
+
+label{
+    color: rgb(235, 225, 155);
+}
+
+input{
+    background-color: rgb(235, 225, 155);
+    border: solid 2px;
+    border-color: rgb(133, 89, 89);
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: rgb(133, 89, 89);
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+.quote{
+    color: white;
+}
+
+.background{
+    border: 1px solid black;
+    background-image: url('../img/rooster.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+}
+
+.background p{
+    margin-bottom: 20px;
+    
+}
+
+.background a{
+    padding: 10px;
+    border: 1px solid green;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+i{
+    font-size: 270px;
+    color: rgb(255, 255, 255);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    width: 70%;
+}
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.grid-card{
+    background-color: rgb(3, 53, 124);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-card a{
+    color: white;
+}
+
+.grid-card img{
+    width: 350px;
+}
+
+.large{
+    grid-row: span 1;
+}
+
+.long{
+    grid-column: span 2;
+}
+
+.long img{
+    width: 700px;
+}
+
+.background a{
+    margin: 50px;
+}
+
+.school{
+    background-image: url(../img/school.jpg);
+    height: 600px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color:rgb(3, 53, 124);
+    }
+
+    .wrapper {
+        width: 589px;
+    }
+
+    .center {
+        width: 100%; 
+    }
+
+    .grid-container {
+        grid-template-columns: 100%;
+    }
+
+    .grid-card img {
+        width: 100%;
+    }
+
+    .long img {
+        width: 100%;
+    }
+
+    .over{
+        display: grid;
+    }
+
+    .overs{
+        width: 100%;
+    }
+
+    .background{
+        max-width: auto;
+    }
+
+}
+
